@@ -18,7 +18,7 @@ else:
     l = 0
     r = 1
 
-    while r < len(s)-1: # each iteration we increase r by 1 thus no fear of infinite cycle, len(s) - 1 as use r+1 inside
+    while r < len(s)-1:  # each iteration we increase r by 1, len(s) - 1 as use r+1 inside
         if chars_freq.get(s[r + 1], 0) == max_count:  # could stumble upon unknown char
             max_count += 1
         elif r-l+1 - max_count >= k: # we have spare space of k for changing chars
@@ -30,4 +30,6 @@ else:
     # max and terminal size of the window
     print(r - l + 1)
 
+
+# you can solve it by binary_search and prefix sums
 

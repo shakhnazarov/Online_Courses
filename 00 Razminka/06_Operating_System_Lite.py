@@ -17,7 +17,7 @@ for i in range(N):
         '''
         Note, overall seven cases are possible (_ - empty, X - old, O - new):
         ____XXXX____    ____XXXX____    ____XXXX____    ____XXXX____    ____XXXX____    ____XXXX____    ____XXXX____
-        _00_________    ___000______    ____0000____    _____00_____    ______000___    _________00_    ___000000___
+        _00_________    ___000______    ____0  000____    _____00_____    ______000___    _________00_    ___000000___
         no overwrite    overwrite       overwrite       overwrite       overwrite       no overwrite    overwrite
         '''
     systems = systems.difference(set_for_delete)
@@ -26,6 +26,12 @@ for i in range(N):
 # print out the number of remaining systems
 print(len(systems))
 
+
+# we can intersect lines by a <= d and c<=b for:
+# a ------ b (a<=b)
+#    c ------ d (c<=d
+
+# Can solve O(NlogN) by sorting the systems and using binary_search  and balanced biniary search tree
 '''
 Complexity: O(N**2)
 Auxiliary Space: O(N)
