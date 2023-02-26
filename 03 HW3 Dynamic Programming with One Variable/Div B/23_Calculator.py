@@ -1,6 +1,6 @@
 """
 Use DP for solution
-Step: we may arrive to N by (N//3)*3 or (N//2)*2 or (N-1)+1 or (N-2)+1+1 (e.g. 11), so compare the setups
+Step: we may arrive to N by (N//3)*3 or (N//2)*2 or (N-1)+1, so compare the setups
 ans(N) = min(ans(N-1)+1, #if N%2==0, ans(N//2) #if N%3==0. ans(N//3)
 """
 
