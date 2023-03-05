@@ -3,6 +3,7 @@ Use list of sets (set(vertexes)) to store the graph (set as multiple edges prese
 """
 import sys
 sys.setrecursionlimit(100001)  # initial limit is usually 1000
+
 def dfs(graph, visited, now):
     visited[now] = True
     for neigh in graph[now]:

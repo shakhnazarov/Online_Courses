@@ -26,11 +26,12 @@ row, col = map(int, input().split())  # wil -1 to make indexation consistent
 row -= 1
 col -= 1
 
+# compute area
 visited = {}  # will keep what vertexes dfs visited
 for key in graph.keys():
     visited[key] = False
 ans = []  # a global variable, could use just int var but list is easier for debugging
-dfs(graph, visited, (row, col))  # dfs checks within the component
+dfs(graph, visited, (row, col))  # dfs checks within the component only
 print(len(ans))  # each vertex is of area 1
 
 '''
