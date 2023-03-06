@@ -1,5 +1,5 @@
 """
-Just find loop using dfs
+Just find cycle using dfs
 colors: 0 - white (have not been in the vertex), 1 - grey (been in the vertex) (we don't need 3 colors as graph is
 undirected)
 """
@@ -7,17 +7,23 @@ import sys
 sys.setrecursionlimit(100001)  # initial limit is usually 1000
 
 def dfs(graph, now, parent = None):
-    global is_loop
+    global is_cycle, is_finished, start_cycle
     graph[now][0] = 1
     for neigh in graph[now][1]:
         if neigh == parent: # anything==None is False (except None)
             continue
-        if graph[neigh][0] == 1 and not is_loop:  # add not is_loop to go only on the loop path and not check neighs
-            is_loop = True
-        if graph[neigh][0] == 0 and not is_loop:
+        if graph[neigh][0] == 1 and not is_cycle:  # add not is_cycle to go only on the cycle path and not check neighs
+            is_cycle = True
+            is_finished = False
+            start_cycle = neigh
+            cycle.append(start_cycle)
+        if graph[neigh][0] == 0 and not is_cycle:
             dfs(graph, neigh, now)
-    if is_loop:
-        loop.append(now)
+    if is_cycle and not is_finished:
+        if now == start_cycle:
+            is_finished = True
+        else:
+            cycle.append(now)
 
 
 # read input
@@ -30,27 +36,27 @@ for i in range(1, N+1):
         if line[j] == 1:
             graph[i][1].append(j+1)
 
-loop = []  # global variable
-global is_loop
-is_loop = False
+cycle = []  # global variable
+global is_cycle
+is_cycle = False
 for i in range(1, N+1):
     if graph[i][0] == 1:  # if we have already been in component don't need to recheck
         continue
     dfs(graph, i)
-    if is_loop:
+    if is_cycle:
         break
 
 # print out the results
-if is_loop:
+if is_cycle:
     print("YES")
-    print(len(loop))
-    print(*loop)
+    print(len(cycle))
+    print(*cycle)
 else:
     print("NO")
 
 '''
 Complexity: O(N*M)  # on input, beside input O(N+M)
-Auxiliary Space: O(N^2) # worst case for complete graph
+Auxiliary Space: O(N+M)
 Test cases:
 3
 0 1 1

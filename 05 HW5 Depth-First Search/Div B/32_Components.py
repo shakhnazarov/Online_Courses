@@ -39,7 +39,7 @@ for comp in components:
 
 '''
 Time complexity: O(N+M)
-Auxiliary space: O(N)
+Auxiliary space: O(N+M)
 Test cases:
 1 0
 1

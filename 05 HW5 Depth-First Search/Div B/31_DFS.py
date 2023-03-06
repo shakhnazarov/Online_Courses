@@ -30,7 +30,7 @@ print(*sorted(vertexes_comp))
 
 '''
 Complexity: O(NlogN+M)  #(N+M) for dfs and NlogN for sort
-Auxiliary space complexity: O(N)  # if don't count recursion
+Auxiliary space complexity: O(N+M)  # if don't count recursion
 Test cases:
 4 5
 2 2
