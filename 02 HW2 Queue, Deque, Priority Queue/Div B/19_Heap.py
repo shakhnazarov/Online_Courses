@@ -45,6 +45,8 @@ class MaxHeap:
 
             if self.heap[index_parent] < self.heap[max_index]:  # swap only if child is greater than parent
                 self.heap[index_parent], self.heap[max_index] = self.heap[max_index], self.heap[index_parent]
+            else:
+                break
             index_parent = max_index  # update index
 
 
