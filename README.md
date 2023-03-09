@@ -1,3 +1,5 @@
+## Coursera
+
 <details>
   <summary> Coursera - Основы разработки на C++: белый пояс (CPP White) </summary>
   
@@ -8,6 +10,8 @@
   Final project - a simple data warehouse with addition, deletion, and search capabilities
 </details>
 
+## Yandex
+
 <details>
   <summary> Yandex - Тренировки по алгоритмам 2.0 (Algorithm Training 2.0) </summary>
   
@@ -17,14 +21,14 @@
   
 ### Content
 
-1. "Сложность, тестирование, особые случаи" [**(** лекция **)**](https://www.youtube.com/watch?v=QLhqYNsPIVo)
-2. "Линейный поиск" [**(** лекция **)**](https://www.youtube.com/watch?v=SKwB41FrGgU)
-3. "Множества" [**(** лекция **)**](https://www.youtube.com/watch?v=PUpmV2ieIHA)
-4. "Словари и сортировка подсчётом" [**(** лекция **)**](https://www.youtube.com/watch?v=Nb5mW1yWVSs)
-5. "Префиксные суммы и два указателя" [**(** лекция **)**](https://www.youtube.com/watch?v=de28y8Dcvkg)
-6. "Бинарный поиск" [**(** лекция **)**](https://www.youtube.com/watch?v=YENpZexHfuk)
-7. "Сортировка событий" [**(** лекция **)**](https://www.youtube.com/watch?v=hGixDBO-p6Q)
-8. "Деревья" [**(** лекция **)**](https://www.youtube.com/watch?v=lEJzqHgyels)
+1. "Сложность, тестирование, особые случаи" [**(** Lecture **)**](https://www.youtube.com/watch?v=QLhqYNsPIVo)
+2. "Линейный поиск" [**(** Lecture **)**](https://www.youtube.com/watch?v=SKwB41FrGgU)
+3. "Множества" [**(** Lecture **)**](https://www.youtube.com/watch?v=PUpmV2ieIHA)
+4. "Словари и сортировка подсчётом" [**(** Lecture **)**](https://www.youtube.com/watch?v=Nb5mW1yWVSs)
+5. "Префиксные суммы и два указателя" [**(** Lecture **)**](https://www.youtube.com/watch?v=de28y8Dcvkg)
+6. "Бинарный поиск" [**(** Lecture **)**](https://www.youtube.com/watch?v=YENpZexHfuk)
+7. "Сортировка событий" [**(** Lecture **)**](https://www.youtube.com/watch?v=hGixDBO-p6Q)
+8. "Деревья" [**(** Lecture **)**](https://www.youtube.com/watch?v=lEJzqHgyels)
 
 ### Problems
 _Division ***B***_
@@ -60,12 +64,12 @@ _Division ***A***_
   
 ### Content
 
-1. "Стеки" [**(** лекция **)**](https://www.youtube.com/live/ZUpImO_2hmA?feature=share)
-2. "Очереди, деки и приоритетные очереди" [**(** лекция **)**](https://www.youtube.com/live/sAyOhkMZae4?feature=share)
-3. "Динамическое программирование с одним параметром" [**(** лекция **)**](https://www.youtube.com/watch?v=H7lu6h8H9-4&feature=youtu.be)
-4. "Динамическое программирование с двумя параметрами" [**(** лекция **)**](https://www.youtube.com/live/U8gzm92fprI?feature=share)
-5. "Обход графов в глубину" [**(** лекция **)**](https://www.youtube.com/watch?v=0YjdZlgf9Ig)
-6. "Обход графов в ширину" [**(** лекция **)**](https://www.youtube.com/watch?v=IRdz2GgnQwk)
+1. "Стеки" [**(** Lecture **)**](https://www.youtube.com/live/ZUpImO_2hmA?feature=share)
+2. "Очереди, деки и приоритетные очереди" [**(** Lecture **)**](https://www.youtube.com/live/sAyOhkMZae4?feature=share)
+3. "Динамическое программирование с одним параметром" [**(** Lecture **)**](https://www.youtube.com/watch?v=H7lu6h8H9-4&feature=youtu.be)
+4. "Динамическое программирование с двумя параметрами" [**(** Lecture **)**](https://www.youtube.com/live/U8gzm92fprI?feature=share)
+5. "Обход графов в глубину" [**(** Lecture **)**](https://www.youtube.com/watch?v=0YjdZlgf9Ig)
+6. "Обход графов в ширину" [**(** Lecture **)**](https://www.youtube.com/watch?v=IRdz2GgnQwk)
 
 ### Problems
  
