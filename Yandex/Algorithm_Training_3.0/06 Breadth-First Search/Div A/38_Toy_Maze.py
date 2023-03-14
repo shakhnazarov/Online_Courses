@@ -1,86 +1,45 @@
 """
 Use BFS and add to the vertex from actions are made which are the last available if one made an action
 """
-def bfs(graph, paths):
-    for length in range(len(paths)):
-        for vertex in paths[length]:
-            i_init, j_init = vertex
+import sys
+from collections import deque
 
-            # rotate towards ourselves
-            i = i_init + 1
-            j = j_init
-            while i < N:
-                if graph[i][j][2] == 2:
-                    return length+1
-                elif graph[i][j][2] == 1:
-                    break
-                elif graph[i][j][2] == 0 and graph[i][j][1] != 1:  # do not update for rotating
-                    graph[i][j][0] = length+1
-                i += 1
-            field[i-1][j][1] = 1  # reached end
-            if (i-1, j) not in paths[length]:  # check whether the same vertex
-                paths[length+1].append((i-1, j))
+DXY = [(1,0), (0, 1), (-1, 0), (0, -1)]
 
-            # rotate outwards
-            i = i_init - 1
-            j = j_init
-            while i > -1:
-                if graph[i][j][2] == 2:
-                    return length + 1
-                elif graph[i][j][2] == 1:
-                    break
-                elif graph[i][j][2] == 0 and graph[i][j][1] != 1:  # do not update for rotating
-                    graph[i][j][0] = length + 1
-                i -= 1
-            field[i + 1][j][1] = 1  # reached end
-            if (i + 1, j) not in paths[length]:
-                paths[length+1].append((i + 1, j))
-
-            # tilt left
-            i = i_init
-            j = j_init - 1
-            while j > -1:
-                if graph[i][j][2] == 2:
-                    return length + 1
-                elif graph[i][j][2] == 1:
-                    break
-                elif graph[i][j][2] == 0 and graph[i][j][1] != 1:  # do not update for rotating
-                    graph[i][j][0] = length + 1
-                j -= 1
-            field[i][j+1][1] = 1  # reached end
-            if (i, j+1) not in paths[length]:
-                paths[length+1].append((i, j+1))
-
-            # tilt right
-            i = i_init
-            j = j_init + 1
-            while j < M:
-                if graph[i][j][2] == 2:
-                    return length + 1
-                elif graph[i][j][2] == 1:
-                    break
-                elif graph[i][j][2] == 0 and graph[i][j][1] != 1:  # do not update for rotating
-                    graph[i][j][0] = length + 1
-                j += 1
-            field[i][j - 1][1] = 1  # reached end
-            if (i, j - 1) not in paths[length]:
-                paths[length+1].append((i, j - 1))
-
-
-
-# read input
 N, M = map(int, input().split())
-field = [[[-1, -1, -1] for _ in range(M)] for _ in range(N)]  # [length of path till point, can rotate from this, type]
-field[0][0][0] = 0
-field[0][0][1] = 1  # can rotate from this
-for i in range(N):
-    line = list(map(int, input().split()))
-    for j in range(M):
-        field[i][j][2] = line[j]
+field = [list(map(int, input().split())) for _ in range(N)]
+dist = [[float('inf') for _ in range(M)] for __ in range(N)]
 
-paths = [[] for _ in range(N*M+1)]
-paths[0].append((0,0))
-print(bfs(field, paths))
+q = deque()
+dist[0][0] = 0
+q.append((0, 0))
+
+while len(q) != 0:
+    x, y = q.popleft()
+    for dx, dy in DXY:
+        cur_x, cur_y = x, y
+        while True:
+            new_x = cur_x + dx
+            new_y = cur_y + dy
+            if 0 <= new_x < N and 0 <= new_y < M and field[new_x][new_y] != 1:
+                cur_x, cur_y = new_x, new_y
+            else:
+                break
+            if field[new_x][new_y] == 2:
+                print(dist[x][y] + 1)
+                sys.exit()
+
+        if dist[cur_x][cur_y] > dist[x][y] + 1 and field[cur_x][cur_y] != 2:
+            dist[cur_x][cur_y] = min(dist[cur_x][cur_y], dist[x][y] + 1)
+            q.append((cur_x, cur_y))
+
+ans = float('inf')
+for i in range(N):
+    for j in range(M):
+        if field[i][j] == 2:
+            ans = min(ans, dist[i][j])
+
+print(ans)
 '''
 Complexity: O((M*N)^2)
 Auxiliary Space Complexity: O(M*N)
