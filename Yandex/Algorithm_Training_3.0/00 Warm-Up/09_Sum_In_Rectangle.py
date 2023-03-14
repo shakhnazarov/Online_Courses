@@ -1,3 +1,7 @@
+"""
+Use prefix sum where pref[i][j] is the sum of values for matrix from left top corner to i, j
+"""
+
 # read input matrix
 N, M, K = map(int, input().split())
 matrix = [[] for x in range(N)]  # NxM matrix
@@ -30,8 +34,15 @@ for i in range(K):
     print(ans)
 
 '''
-# conventional solution is too slow
-    for j in range(x1-1, x2):  # coordinates start from 1 but indices from 0
-        for k in range(y1-1, y2):
-            ans += matrix[j][k]
+Performance: P 3.11.2 (2028 ms, 76.86 Mb); P 3.9 PyPy 7.3.11 (859 ms, 44.43 Mb)
+Complexity: O(N**2)
+Auxiliary Space: O(N**2)
+Test cases:
+3 3 2
+1 2 3
+4 5 6
+7 8 9
+2 2 3 3
+1 1 2 3
+ans: 28 21
 '''

@@ -1,3 +1,7 @@
+"""
+Each time split the string by the lowest occurrence char into substrings
+"""
+
 # split a list by 0
 def split(arr):
     res = []
@@ -37,7 +41,14 @@ while len(general_list) != 0:
 print(ans)
 
 '''
-Test cases:
+Performance: P 3.11.2 (45 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (184 ms, 28.33 Mb)
+Complexity: O(N) 
+Auxiliary Space Complexity: O(N)
+Test Cases:
+2
+3
+4
+ans: 3
 7
 2
 3
@@ -46,5 +57,5 @@ Test cases:
 2
 3
 4
-Ans: 12
+ans: 12
 '''

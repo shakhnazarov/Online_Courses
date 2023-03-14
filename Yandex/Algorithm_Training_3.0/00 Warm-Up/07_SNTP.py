@@ -1,3 +1,7 @@
+"""
+Convert to seconds and neatly find the difference in times
+"""
+
 from math import ceil
 
 # read input
@@ -63,3 +67,14 @@ if ans_ss < 10:
 
 # print answer
 print(f"{ans_hh}:{ans_mm}:{ans_ss}")
+
+'''
+Performance: P 3.11.2 (51 ms, 4.44 Mb); P 3.9 PyPy 7.3.11 (165 ms, 28.10 Mb)
+Complexity: O(1)
+Auxiliary Space: O(1)
+Test cases:
+15:01:00
+18:09:45
+15:01:40
+ans: 18:10:05
+'''

@@ -1,3 +1,10 @@
+"""
+Each time intersect the systems and check which ones left
+# we can intersect lines by a <= d and c<=b for:
+# a ------ b (a<=b)
+#    c ------ d (c<=d
+# Can solve O(NlogN) by sorting the systems and using binary_search  and balanced biniary search tree
+"""
 # read input
 M = int(input())
 N = int(input())
@@ -26,13 +33,8 @@ for i in range(N):
 # print out the number of remaining systems
 print(len(systems))
 
-
-# we can intersect lines by a <= d and c<=b for:
-# a ------ b (a<=b)
-#    c ------ d (c<=d
-
-# Can solve O(NlogN) by sorting the systems and using binary_search  and balanced biniary search tree
 '''
+Performance: P 3.11.2 (185 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (239 ms, 28.10 Mb)
 Complexity: O(N**2)
 Auxiliary Space: O(N)
 Test cases:

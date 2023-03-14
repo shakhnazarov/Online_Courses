@@ -1,6 +1,9 @@
+"""
+Use dictionary to count the occurrences of each character
+"""
 from collections import Counter
 
-# initialize the input (note we dont know the exact number of inputs) (ctrl+D to cancel input in console)
+# initialize the input (note we don't know the exact number of inputs) (ctrl+D to cancel input in console)
 # could use open('input.txt').read() here
 raw_str = ""
 while True:
@@ -45,3 +48,29 @@ print_str = ""
 for key in count_dict.keys():
     print_str += key
 print(print_str)
+
+'''
+Performance: P 3.11.2 (186 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (230 ms, 28.32 Mb)
+Complexity: O(a*N)  # a = 200 characters in a line, N - numbers of lines
+Auxiliary Space Complexity: O(b)  # b ~ 45 size of alphabet
+Test Cases:
+Twas brillig, and the slithy toves
+Did gyre and gimble in the wabe;
+All mimsy were the borogoves,
+And the mome raths outgrabe.
+ans:
+         #              
+         #              
+         #              
+         #              
+         #              
+         #         #    
+         #  #      #    
+      #  # ###  ####    
+      ## ###### ####    
+      ##############    
+      ##############  ##
+#  #  ############## ###
+########################
+,.;ADTabdeghilmnorstuvwy
+'''

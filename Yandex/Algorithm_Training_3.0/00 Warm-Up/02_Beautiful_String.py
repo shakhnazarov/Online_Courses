@@ -1,3 +1,8 @@
+"""
+Use two pointers to widen window as long as chars within window can be changed for the same ones
+# you can solve it by binary_search and prefix sums
+"""
+
 # read input
 k = int(input())
 s = input()
@@ -31,5 +36,15 @@ else:
     print(r - l + 1)
 
 
-# you can solve it by binary_search and prefix sums
-
+'''
+Performance: P 3.11.2 (303 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (220 ms, 28.09 Mb)
+Complexity: O(N)  # N = length of string S
+Auxiliary Space Complexity: O(b)  # b ~ 26 size of alphabet
+Test Cases:
+2
+abcaz
+ans: 4
+400
+gcasnpanxtiqghxayrxpvyagmtzapagsqdrsojldoqnugrphltmbjxvklngocdgjcxitufotwuvejpizwmtulmwygurtoizcluuzxuvdqiiffmrwfhkpylmwguotjmgzhvobpaksssgpaocqisuvghbvylrfdaportmfmtydjcwoqqxpbnmkaiaewnwdwvqavgvzvmyqmslhaavtsuohpayxhqgyfsorriqkaizgiryruysygrpmhkprpkyrsolqfclojcltwwjfmnyffewumwbwcfvhlhhhbzdfztiucqbtowrfkwlydzuekwrjyqncofjauzgjhbxqwbcayatdhzkmdpzitzxycopstcqbshvspkfvberfguqeezgxhyrngbkunsngcumurssigqlrphnrfxprmsgivrfvgxygakvkgzubwrssprzdfpirsjuyvxbtygbnpbxhepnxiejjwwtejvpbnibpjngjyfiriciejdaercjnjaqigsyjlybmqrtpxwrcfpmshgdhevqfwapvzjfygtnohydurikqpdekeogokjcneeejgsvkbdahjtcwfiyplbibznzjtvtrdvrlscjfcuzpbvxgewwzppswariagkadfjsrcmhpbnmuqucocsydquoutnarkkttjqywlwqpokwkoaiduvcjmgxqvszwhhwcjfnkoomhjxuviclndzuirqkfjoukkaanrhhrkbarrecfvhvddecejbccffnjncmvnsryredcqzgluligofbgibxbuaeiybbydczzovczsiiessvdgdlunwwzaoapiuwxjyjloxovzgkmpnjvjqejmpikontkiovaeiyfjhrzplzaqjjvyqrkkntzkpngexbiemqlnnhwtjmoeezybqwhomkulryhgzbzixlkrtnnjxxyghdbkcacfbsuafrwafvahqevzeurddnvzzobzzlhgkuurjawjejuurjywnbvflttfasweaxm
+ans: 432
+'''

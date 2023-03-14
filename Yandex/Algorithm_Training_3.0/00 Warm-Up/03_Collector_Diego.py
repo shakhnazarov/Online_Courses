@@ -1,4 +1,6 @@
-# standard binary search
+"""
+Use binary search to find the needed sticker
+"""
 def binary_search(num):
     # check whether array is empty (len(diego_nums)==0):
     if N == 0:
@@ -54,3 +56,20 @@ else:
 # use binary search for each collector
 for i in range(K):
     print(binary_search(collectors_nums[i]))
+
+'''
+Performance: P 3.11.2 (497 ms, 18.75 Mb); P 3.9 PyPy 7.3.11 (347 ms, 58.64 Mb)
+Complexity: O(NlogN)
+Auxiliary Space Complexity: O(1)
+Test Cases:
+1
+5
+2
+4 6
+ans: 0 1
+4
+3 3 2 2
+4
+3 3 4 2
+ans: 1 1 2 0
+'''
