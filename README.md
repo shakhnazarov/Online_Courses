@@ -92,5 +92,5 @@ _Division ***A***_
   3. [contest](https://contest.yandex.ru/contest/45469/) | [solution](https://github.com/shakhnazarov/Online_Courses/tree/master/Yandex/Algorithm_Training_3.0/03%20Dynamic%20Programming%20with%20One%20Variable/Div%20A) 5/5
   4. [contest](https://contest.yandex.ru/contest/45469/) | [solution](https://github.com/shakhnazarov/Online_Courses/tree/master/Yandex/Algorithm_Training_3.0/04%20Dynamic%20Programming%20with%20Two%20Parameters/Div%20A) 5/5
   5. [contest](https://contest.yandex.ru/contest/45469/) | [solution](https://github.com/shakhnazarov/Online_Courses/tree/master/Yandex/Algorithm_Training_3.0/05%20Depth-First%20Search/Div%20A) 5/5
-  6. [contest](https://contest.yandex.ru/contest/45469/) | [solution](https://github.com/shakhnazarov/Online_Courses/tree/master/Yandex/Algorithm_Training_3.0/06%20Breadth-First%20Search/Div%20A) 5/5
+  6. [contest](https://contest.yandex.ru/contest/45469/) | [solution](https://github.com/shakhnazarov/Online_Courses/tree/master/Yandex/Algorithm_Training_3.0/06%20Breadth-First%20Search/Div%20A) 3/5
   
