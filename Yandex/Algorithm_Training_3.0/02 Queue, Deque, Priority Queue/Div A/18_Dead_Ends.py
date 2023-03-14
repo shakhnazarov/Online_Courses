@@ -1,3 +1,6 @@
+"""
+Use MinHeap to understand which trains from which dead ends have departed and place new trains to min dead ends
+"""
 class MinHeap:
     def __init__(self, heap = None):
         if heap is None:
@@ -93,6 +96,14 @@ if is_ok:
 else:
     print(f"{0} {broken_train}")
 
-
+'''
+Performance: P 3.11.2 (988 ms, 5.94 Mb); P 3.9 PyPy 7.3.11 (687 ms, 40.25 Mb)
+Complexity: O(NlogN + KlogK)
+Auxiliary space: O(K)
+Test cases:
+1 1
+2 5
+ans: 1
+'''
 
     

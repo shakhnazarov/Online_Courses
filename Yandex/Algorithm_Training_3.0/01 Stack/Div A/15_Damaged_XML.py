@@ -55,9 +55,10 @@ for ch in alphabet:
             if j == len(XML_changed) and len(tags_stack) == 0:  # got to the end of the loop
                 is_correct = True
 
-print(XML_changed)
+print(XML_changed, end='')
 
 '''
+Performance: P 3.11.2 (291 ms, 23.54 Mb); P 3.9 PyPy 7.3.11 (280 ms, 45.69 Mb)
 Complexity: O(a*N^2)  # a is size of alphabet (29)
 Auxiliary Space: O(N)
 Test cases:

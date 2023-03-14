@@ -57,6 +57,7 @@ for l in range(nums[s_num]-1, -1, -1):
 print(*ans[::-1])
 
 '''
+Performance: P 3.11.2 (50 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (225 ms, 28.09 Mb)
 Time complexity: O(a)  # a - len of the number
 Auxiliary Space: O(b)  # b - max possible number
 1111

@@ -26,6 +26,7 @@ for i in range(N):
             deque_r.appendleft(int(command[1]))
 
 '''
+Performance: P 3.11.2 (504 ms, 6.76 Mb); P 3.9 PyPy 7.3.11 (597 ms, 29.29 Mb)
 Complexity: O(N)
 Auxiliary space: O(1)
 Test cases:

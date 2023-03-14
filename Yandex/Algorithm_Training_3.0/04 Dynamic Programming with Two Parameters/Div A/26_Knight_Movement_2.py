@@ -24,6 +24,7 @@ for k in range(N+M-1):
 print(dp[-1][-1])
 
 '''
+Performance: P 3.11.2 (49 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (193 ms, 28.32 Mb)
 Complexity: O((N+M)^2)
 Auxiliary space: O(N*M)
 Test cases:

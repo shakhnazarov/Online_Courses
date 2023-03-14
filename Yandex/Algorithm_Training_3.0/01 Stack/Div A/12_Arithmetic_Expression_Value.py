@@ -1,3 +1,7 @@
+"""
+Could use translation into postfix format as in 13, but use eval
+"""
+
 # read input
 equation = input()
 elements = list(equation.split())
@@ -23,6 +27,7 @@ else:
     print("WRONG")
 
 '''
+Performance: P 3.11.2 (45 ms, 4.39 Mb); P 3.9 PyPy 7.3.11 (177 ms, 28.10 Mb)
 Time complexity: O(N)
 Auxiliary space: O(N)
 Test cases:

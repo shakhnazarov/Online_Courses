@@ -83,6 +83,7 @@ for order in orders:
 print(count)
 
 '''
+Performance: P 3.11.2 (Time Limit); P 3.9 PyPy 7.3.11 (1130 ms, 110.78 Mb)
 Complexity: O(NlogN)
 Time complexity: O(N)
 Test cases:

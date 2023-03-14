@@ -54,6 +54,7 @@ if board[s_k[0]][s_k[1]][0] % 2 == 1:
 else:
     print(board[s_k[0]][s_k[1]][0] // 2)
 '''
+Performance: P 3.11.2 (44 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (172 ms, 28.09 Mb)
 Time complexity: O((N*M)^2)
 Auxiliary space: O(N*M)
 a1 a2

@@ -20,6 +20,7 @@ for i in range(len(str_1)):
 print(dp[len(str_1)][len(str_2)])
 
 '''
+Performance: P 3.11.2 (Time Limit); P 3.9 PyPy 7.3.11 (240 ms, 33.46 Mb)
 Complexity: O(N*M)  # N = len(str_1), M = len(str_2)
 Auxiliary Space Complexity: O(N*M
 Test cases:

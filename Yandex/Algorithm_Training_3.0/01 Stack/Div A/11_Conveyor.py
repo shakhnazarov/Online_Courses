@@ -1,4 +1,6 @@
-# read input
+"""
+Presort the non-int values and threat them as if they were in a simple natural order
+"""                                                                                             # read input
 N = int(input())
 
 for i in range(N):
@@ -26,6 +28,7 @@ for i in range(N):
 
 
 '''
+Performance: P 3.11.2 (142 ms, 5.09 Mb); P 3.9 PyPy 7.3.11 (253 ms, 28.11 Mb)
 Complexity: O(N*K*logK)  # sorting is KlogK and K times binary search also KlogK
 Auxiliary space: O(K)
 Test cases:

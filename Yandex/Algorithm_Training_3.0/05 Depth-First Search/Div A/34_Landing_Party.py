@@ -65,6 +65,7 @@ for i in range(1, N+1):
 print(count)
 
 '''
+Performance: P 3.11.2 (88 ms, 7.26 Mb); P 3.9 PyPy 7.3.11 (320 ms, 39.84 Mb)
 Complexity: O((NM)^2)
 Auxiliary Space: O(N*M)
 Test cases:

@@ -19,6 +19,7 @@ for i in range(3, N+1):
 print(dp[N])
 
 '''
+Performance: P 3.11.2 (369 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (209 ms, 28.33 Mb)
 Complexity: O(N)
 Auxiliary Space Complexity: O(N)
 Test cases:

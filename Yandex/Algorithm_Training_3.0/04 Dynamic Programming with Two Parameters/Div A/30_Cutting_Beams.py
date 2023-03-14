@@ -32,6 +32,7 @@ for diff in range(2, len(cuts)):  # for beams with num_cuts -1 and 0 ans is 0
 print(dp[0][-1])
 
 '''
+Performance: P 3.11.2 (126 ms, 4.39 Mb); P 3.9 PyPy 7.3.11 (197 ms, 28.10 Mb)
 Complexity: O(N^3)
 Auxiliary Space: O(N^2)
 Test Cases:

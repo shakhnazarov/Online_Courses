@@ -28,6 +28,7 @@ ans.append(window[0])
 print(*ans)
 
 '''
+Performance: P 3.11.2 (437 ms, 18.85 Mb); P 3.9 PyPy 7.3.11 (449 ms, 62.23 Mb)
 Complexity: O(N*logN)  # each time we insert for logN (N as do note delete items and heap could be of size N)
 Auxiliary space: O(N)
 Test cases:

@@ -19,6 +19,7 @@ for i in range(2, len(cubes)):
 
 print(dp[N])
 '''
+Performance: P 3.11.2 (Time Limit); P 3.9 PyPy 7.3.11 (698 ms, 29.46 Mb)
 Complexity: O(n^(4/3))  # n^1/3 for iterating over cubes
 Auxiliary Space: O(n)
 Test cases:

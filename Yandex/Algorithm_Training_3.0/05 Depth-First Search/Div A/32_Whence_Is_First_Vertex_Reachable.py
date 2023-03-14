@@ -27,6 +27,7 @@ dfs(graph, 1)
 print(*sorted(reachable))
 
 '''
+Performance: P 3.11.2 (1769 ms, 43.83 Mb); P 3.9 PyPy 7.3.11 (568 ms, 65.95 Mb)
 Time Complexity: O(N + M)
 Auxiliary Space Complexity: O(N)
 Test cases:

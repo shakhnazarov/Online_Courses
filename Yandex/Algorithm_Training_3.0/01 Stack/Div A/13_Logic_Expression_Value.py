@@ -1,3 +1,7 @@
+"""
+Convert to postfix notation and handle the ! operation
+"""
+
 # read input
 equation = input()
 
@@ -54,6 +58,7 @@ for elem in postfix:
 print(operands_stack[-1])
 
 '''
+Performance: P 3.11.2 (44 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (Compilation Error)
 Complexity: O(N)
 Auxiliary Space: O(N)
 Test cases:

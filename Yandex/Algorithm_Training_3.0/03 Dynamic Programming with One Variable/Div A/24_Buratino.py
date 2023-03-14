@@ -49,6 +49,7 @@ for i in range(1, SECOND+2):
 print(dp_f[-1] + dp_s[-1])
 
 '''
+Performance: P 3.11.2 (216 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (290 ms, 28.09 Mb)
 Complexity: O(N)
 Auxiliary Space: O(N)
 Test Cases:

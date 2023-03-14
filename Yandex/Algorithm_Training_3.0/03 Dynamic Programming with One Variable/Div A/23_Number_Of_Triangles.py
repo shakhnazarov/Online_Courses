@@ -45,6 +45,7 @@ print(*diff_3)
 '''
 
 '''
+Performance: P 3.11.2 (104 ms, 7.83 Mb); P 3.9 PyPy 7.3.11 (168 ms, 28.10 Mb)
 Complexity: O(N)
 Auxiliary Space: O(N)  # can do O(1) if do not keep values except for 3 values of sequence
 Test cases:

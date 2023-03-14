@@ -33,6 +33,7 @@ for i in range(1, N+1):
 print(*ans[::-1])
 
 '''
+Performance: P 3.11.2 (885 ms, 48.52 Mb); P 3.9 PyPy 7.3.11 (713 ms, 75.52 Mb)
 Complexity: O(NlogN + M)  # M is number of edges
 Auxiliary Space: O(N + M)
 Test Cases:

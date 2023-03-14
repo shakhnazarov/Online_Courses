@@ -35,6 +35,7 @@ dfs(graph, visited, (row, col))  # dfs checks within the component only
 print(len(ans))  # each vertex is of area 1
 
 '''
+Performance: P 3.11.2 (50 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (176 ms, 28.09 Mb)
 Time Complexity: O(N^2)  # to read N^2 but also beside this works for O(N^2) in case of complete graph
 Auxiliary Space Complexity: O(N^2)
 Test cases:

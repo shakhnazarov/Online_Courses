@@ -28,6 +28,7 @@ for i in range(1, num+1):
 print(dp[command_initial][num])
 
 '''
+Performance: P 3.11.2 (43 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (190 ms, 28.10 Mb)
 Complexity: O(a*k*num) where a is number of letters (6), k is number of letters in the command and num is N
 Auxiliary space: O(a*num)
 Test cases:

@@ -31,6 +31,7 @@ for bin_hist in hist:
 print(max_rectangle)
 
 '''
+Performance: P 3.11.2 (291 ms, 23.54 Mb); P 3.9 PyPy 7.3.11 (280 ms, 45.69 Mb)
 Complexity: O(N)
 Auxiliary Space: O(N)
 Test Cases:

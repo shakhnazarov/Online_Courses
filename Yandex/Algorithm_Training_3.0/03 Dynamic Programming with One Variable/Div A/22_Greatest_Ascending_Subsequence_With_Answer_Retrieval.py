@@ -30,6 +30,7 @@ while indices[index_recover] != -1:
 
 print(*subsequence[::-1])
 '''
+Performance: P 3.11.2 (261 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (206 ms, 28.09 Mb)
 Complexity: O(N^2)
 Auxiliary space: O(N)
 Test cases:

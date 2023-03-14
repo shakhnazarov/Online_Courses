@@ -18,6 +18,7 @@ while len(nums) > 1:
 print(f'{round(0.05*sums, 2):.2f}')  # need to fix output at 2 decimal places
 
 '''
+Performance: P 3.11.2 (258 ms, 13.05 Mb); P 3.9 PyPy 7.3.11 (418 ms, 37.67 Mb)
 Complexity: O(NlogN)
 Auxiliary Space: O(1)
 Test cases:

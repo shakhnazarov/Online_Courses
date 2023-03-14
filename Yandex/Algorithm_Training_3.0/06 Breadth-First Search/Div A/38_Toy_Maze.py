@@ -41,6 +41,7 @@ for i in range(N):
 
 print(ans)
 '''
+Performance: P 3.11.2 (101 ms, 4.39 Mb); P 3.9 PyPy 7.3.11 (221 ms, 28.09 Mb)
 Complexity: O((M*N)^2)
 Auxiliary Space Complexity: O(M*N)
 Test Cases:
