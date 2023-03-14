@@ -48,3 +48,17 @@ for i in range(N, 0, -1):
 print(min_value)
 print(f"{min_index-1} {len(ans)}")
 print(*ans[::-1])
+
+'''
+Performance: P 3.11.2 (50 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (-)
+Complexity: O(N*M)
+Auxiliary Space: O(N*M)
+Test cases:
+5
+35
+40
+101
+59
+63
+ans: 235 0 1 5
+'''

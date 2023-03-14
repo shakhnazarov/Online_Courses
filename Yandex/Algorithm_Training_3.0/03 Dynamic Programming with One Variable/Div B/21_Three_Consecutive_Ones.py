@@ -1,13 +1,13 @@
-# read input
-N = int(input())
-
-'''
+"""
 use DP for solution:
-Step: We can add 1 or 0 to the sequences for N-1, thus ans(N) = 2*ans(N-1) but we should exclude sequences with 
+Step: We can add 1 or 0 to the sequences for N-1, thus ans(N) = 2*ans(N-1) but we should exclude sequences with
 last digits 011 which can be calculated as ans(N-4) (xxxxxx sequence of length N-4, xxxxxx011 sequence of length N-1). Hence,
 ans(N)=2*ans(N-1) - ans(N-4)
 Base: need to calculate for 0, 1, 2, 3
-'''
+"""
+# read input
+N = int(input())
+
 dp = []
 dp.append(2) # 0, 1
 dp.append(4) # 00, 01, 10, 11
@@ -20,7 +20,8 @@ for i in range(4, N):
 print(dp[N-1])  # does not work for N=0
 
 '''
-Complexity: O(NlogN) # for big numbers addition is O(logN), not O(1)
+Performance: P 3.11.2 (45 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (305 ms, 28.32 Mb)
+Complexity: O(N)
 Auxiliary space: O(N)
 Test cases:
 1

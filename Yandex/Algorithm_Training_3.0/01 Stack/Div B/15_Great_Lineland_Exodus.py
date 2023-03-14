@@ -1,3 +1,6 @@
+"""
+Use the stack and sort it to find the nearest neighbor
+"""
 # read input
 N = int(input())
 avg_prices = list(map(int, input().split()))
@@ -15,7 +18,10 @@ for elem in ans:
     print(elem, end=' ')  # note that it won't matter if we print out last " ", system will accept
 
 '''
-test cases:
+Performance: P 3.11.2 (-); P 3.9 PyPy 7.3.11 (427 ms, 28.10 Mb)
+Complexity: O(N)
+Auxiliary Space: O(N)
+TTest cases:
 2
 0 0 
 ans: -1 -1

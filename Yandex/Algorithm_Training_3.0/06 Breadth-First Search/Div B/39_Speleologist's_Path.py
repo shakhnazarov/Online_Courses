@@ -60,6 +60,7 @@ for j in range(N):
 print(ans)
 
 '''
+Performance: P 3.11.2 (120 ms, 8.73 Mb); P 3.9 PyPy 7.3.11 (434 ms, 35.35 Mb)
 Time complexity: O((N^3)^2)
 Auxiliary Space: O(N^3)
 Test Cases:

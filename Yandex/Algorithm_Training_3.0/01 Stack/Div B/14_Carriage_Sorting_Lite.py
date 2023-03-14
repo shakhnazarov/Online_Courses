@@ -1,3 +1,6 @@
+"""
+use stack to keep part of the carriages
+"""
 # read input
 N = int(input())
 carriages = list(map(int, input().split()))
@@ -19,6 +22,9 @@ else:
 
 
 '''
+Performance: P 3.11.2 (50 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (177 ms, 28.32 Mb)
+Complexity: O(N)
+Auxiliary Space: O(N)
 Test cases:
 1
 1

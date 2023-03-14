@@ -59,6 +59,7 @@ else:
     print(-1)
 
 '''
+Performance: P 3.11.2 (513 ms, 50.73 Mb); P 3.9 PyPy 7.3.11 (360 ms, 54.67 Mb)
 Time complexity: O(Q(N*M)^2)
 Auxiliary space: O(N*M)
 Test cases:

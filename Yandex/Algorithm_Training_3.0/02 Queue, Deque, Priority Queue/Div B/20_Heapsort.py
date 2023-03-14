@@ -1,6 +1,6 @@
-from multiprocessing import heap
-
-
+"""
+An in-pace sort using priority queue
+"""
 class MaxHeap:
     def __init__(self, heap=None):
         if heap is None:
@@ -92,6 +92,7 @@ max_heap = MaxHeap(array)
 print(*max_heap.heap_sort())
 
 '''
+Performance: P 3.11.2 (853 ms, 12.79 Mb); P 3.9 PyPy 7.3.11 (354 ms, 43.09 Mb)
 Complexity (of sort): O(NlogN)
 Auxiliary space: O(1)
 Test cases:

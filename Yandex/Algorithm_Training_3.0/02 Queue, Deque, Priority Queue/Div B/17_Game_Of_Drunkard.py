@@ -1,3 +1,6 @@
+"""
+Follow the rules of the game with pair of stacks
+"""
 # read input
 first_cards = list(map(int, input().split()))
 second_cards = list(map(int, input().split()))
@@ -36,6 +39,7 @@ if botva:
     print("botva")
 
 '''
+Performance: P 3.11.2 (43 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (172 ms, 28.09 Mb)
 Time: O(N)
 Auxiliary Space: O(1)
 Test Cases:

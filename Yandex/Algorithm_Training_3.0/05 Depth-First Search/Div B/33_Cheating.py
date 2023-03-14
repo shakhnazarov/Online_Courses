@@ -43,6 +43,7 @@ else:
     print("NO")
 
 '''
+Performance: P 3.11.2 (55 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (225 ms, 28.10 Mb)
 Time complexity: O(N+M)
 Auxiliary space: O(N+M)
 Test cases:

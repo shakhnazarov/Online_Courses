@@ -29,6 +29,7 @@ print(len(vertexes_comp))
 print(*sorted(vertexes_comp))
 
 '''
+Performance: P 3.11.2 (1401 ms, 50.34 Mb); P 3.9 PyPy 7.3.11 (620 ms, 99.52 Mb)
 Complexity: O(NlogN+M)  #(N+M) for dfs and NlogN for sort
 Auxiliary space complexity: O(N+M)  # if don't count recursion
 Test cases:

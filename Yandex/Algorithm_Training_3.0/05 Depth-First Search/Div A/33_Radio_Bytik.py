@@ -73,7 +73,7 @@ print(f'{round(last_R**(1/2)/2, 9):.9f}')
 print(*colors_ans.values())
 
 '''
-Performance: P 3.11.2 (988 ms, 5.94 Mb); P 3.9 PyPy 7.3.11 (687 ms, 40.25 Mb)
+Performance: P 3.11.2 (-); P 3.9 PyPy 7.3.11 (1920 ms, 126.38 Mb)
 Complexity: O(N^2*logN)
 Auxiliary Space: O(N^2)
 Test Cases:

@@ -42,6 +42,7 @@ while i >= 1 and j >= 1:
 print(*subsequence[::-1])
 
 '''
+Performance: P 3.11.2 (789 ms, 16.00 Mb); P 3.9 PyPy 7.3.11 (245 ms, 33.41 Mb)
 Complexity: O(N*M)
 Auxiliary Space: O(N*M)
 Test cases:

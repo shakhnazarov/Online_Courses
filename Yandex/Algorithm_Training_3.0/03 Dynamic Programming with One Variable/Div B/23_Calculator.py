@@ -58,6 +58,7 @@ print(dp[N])
 print(*sorted(sequence))  # print elements delimited by ' ', sorted to present in ascending order
 
 '''
+Performance: P 3.11.2 (522 ms, 10.32 Mb); P 3.9 PyPy 7.3.11 (262 ms, 99.58 Mb)
 Complexity: O(N)
 Auxiliary space: O(N)
 Test cases:

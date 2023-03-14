@@ -34,7 +34,7 @@ print(dp[-1][-1])
 print(*path[::-1])
 
 '''
-Performance: P 3.11.2 (988 ms, 5.94 Mb); P 3.9 PyPy 7.3.11 (687 ms, 40.25 Mb)
+Performance: P 3.11.2 (46 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (179 ms, 28.10 Mb)
 Complexity: O(N*M)
 Auxiliary Space: O(N*M)
 Test cases:

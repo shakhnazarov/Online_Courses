@@ -55,6 +55,7 @@ else:
     print("NO")
 
 '''
+Performance: P 3.11.2 (102 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (247 ms, 28.09 Mb)
 Complexity: O(N*M)  # on input, beside input O(N+M)
 Auxiliary Space: O(N+M)
 Test cases:

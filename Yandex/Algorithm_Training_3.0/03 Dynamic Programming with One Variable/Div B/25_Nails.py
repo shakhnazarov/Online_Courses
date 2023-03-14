@@ -24,6 +24,7 @@ for i in range(2, N):
 print(dp[N-1])
 
 '''
+Performance: P 3.11.2 (47 ms, 4.39 Mb); P 3.9 PyPy 7.3.11 (199 ms, 28.10 Mb)
 Complexity: O(NlogN)
 Auxiliary Space: O(N)
 Test cases:

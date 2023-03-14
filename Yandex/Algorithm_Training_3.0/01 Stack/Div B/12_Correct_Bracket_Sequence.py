@@ -1,3 +1,6 @@
+"""
+Use stack and compare the input to top element of the stack
+"""
 # read input
 s = input()
 
@@ -44,5 +47,14 @@ else:
     print("no")
 
 '''
-print("yes") if (correct_sequence and len(stack) != 0) else print("no")  # one line if statement
+Performance: P 3.11.2 (59 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (Compilation Error)
+Complexity: O(N)
+Auxiliary Space: O(1)
+Test cases:
+(
+ans: no
+()[]
+ans: yes
+([)]
+ans: no
 '''

@@ -46,6 +46,7 @@ else:
     print(*graph_sorted[::-1])  # in reverse order as initially we moved from children to parents)
 
 '''
+Performance: P 3.11.2 (-); P 3.9 PyPy 7.3.11 (650 ms, 37.45 Mb)
 Time complexity: O(N+M)
 Auxiliary Space: O(N+M)
 Test cases:

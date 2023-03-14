@@ -42,6 +42,7 @@ for length, vertexes in enumerate(paths):
 print(ans_len)
 
 '''
+Performance: P 3.11.2 (97 ms, 4.44 Mb); P 3.9 PyPy 7.3.11 (184 ms, 28.10 Mb)
 Complexity: O(V^2+E)  # O(V+E) BFS and O(V^2) for input
 Auxiliary Space Complexity: O(V+E)
 Test Cases:

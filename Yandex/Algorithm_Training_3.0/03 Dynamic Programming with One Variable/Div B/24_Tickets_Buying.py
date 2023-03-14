@@ -1,17 +1,16 @@
+"""
+Use DP
+Step: use min of the waiting time min(ans(N-1) + A_i, ans(N-2) + B_i_of_N-1, ans(N-3) + C_i_of_N-2) where ans(N) min
+time for getting tickets for first N people (note that for last 2 people we do not consider whether they may bought
+more tickets than needed for lesser time
+Base: calculate times for the first 3 customers
+"""
 # read input (the task was solved in the lecture 3)
 N = int(input())
 customers = [[0,0,0]]  # [A_i, B_i, C_i]
 for i in range(N):
     A_i, B_i, C_i = map(int, input().split())
     customers.append([A_i, B_i, C_i])
-
-'''
-Use DP
-Step: use min of the waiting time min(ans(N-1) + A_i, ans(N-2) + B_i_of_N-1, ans(N-3) + C_i_of_N-2) where ans(N) min
-time for getting tickets for first N people (note that for last 2 people we do not consider whether they may bought 
-more tickets than needed for lesser time
-Base: calculate times for the first 3 customers
-'''
 
 customers_wait = [0]  # first redundant zero to make indexation consistent
 customers_wait.append(customers[1][0])
@@ -34,6 +33,7 @@ for i in range(4, N+1):
 print(customers_wait[N])
 
 '''
+Performance: P 3.11.2 (65 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (242 ms, 28.10 Mb)
 Complexity: O(N)
 Auxiliary Space: O(N)
 Test cases:

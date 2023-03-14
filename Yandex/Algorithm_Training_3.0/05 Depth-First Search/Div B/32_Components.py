@@ -38,6 +38,7 @@ for comp in components:
     print(*comp)
 
 '''
+Performance: P 3.11.2 (394 ms, 23.43 Mb); P 3.9 PyPy 7.3.11 (397 ms, 47.17 Mb)
 Time complexity: O(N+M)
 Auxiliary space: O(N+M)
 Test cases:

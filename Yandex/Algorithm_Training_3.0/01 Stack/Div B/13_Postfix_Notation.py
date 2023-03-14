@@ -1,3 +1,6 @@
+"""
+Compute value of a postfix notation equation using stack
+"""
 # read input
 list_input = input().split()
 
@@ -17,3 +20,12 @@ for elem in list_input:
 
 # print out the result (should always be only one element in stack)
 print(stack[0])
+
+'''
+Performance: P 3.11.2 (75 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (280 ms, Compilation Error)
+Complexity: O(N)
+Auxiliary Space: O(1)
+Test cases:
+8 9 + 1 7 - *
+ans: -102
+'''

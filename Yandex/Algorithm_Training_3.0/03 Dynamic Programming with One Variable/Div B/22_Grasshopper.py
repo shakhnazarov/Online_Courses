@@ -1,10 +1,7 @@
-# read input
-N, k = map(int, input().split())
-
-'''
+"""
 Use DP approach
 Step: if location is >> k then we can get there by ans(N-1) + ans(N-2) + ... + ans(N-k) as we can make a jump from
-distance up to k from N. Take ans(N) - ans(N-1) = (ans(N-1) + ans(N-2) + ... + ans(N-k)) - 
+distance up to k from N. Take ans(N) - ans(N-1) = (ans(N-1) + ans(N-2) + ... + ans(N-k)) -
 (ans(N-2) + ans(N-3) + ... + ans(N-k-1)) = ans(N-1) - ans(N-k-1) => ans(N) = 2*ans(N-1) - ans(N-k-1)
 Base: should calculate base for up to k cells, construct several elements to see a pattern
 1 - 1 #1
@@ -13,7 +10,10 @@ Base: should calculate base for up to k cells, construct several elements to see
 4 - 1111 211 121 211 22 31 13 4 #8
 5 - 11111 2111 1211 1121 1112 221 212 122 311 131 113 32 23 41 14 5 #16
 seems as if 2**(N-1) (can prove by induction)
-'''
+"""
+
+# read input
+N, k = map(int, input().split())
 
 # to not calculate base case by hand, prefill the dp array
 dp = [0, 1] # first element will be zero, just to keep numeration consistent, we can do nothing by exactly 1 way
@@ -28,6 +28,7 @@ for i in range(k+3, N+1):
 print(dp[N])
 
 '''
+Performance: P 3.11.2 (44 ms, 4.40 Mb); P 3.9 PyPy 7.3.11 (175 ms, 28.32 Mb)
 Complexity: O(N)
 Auxiliary Space: O(N)
 Test cases:

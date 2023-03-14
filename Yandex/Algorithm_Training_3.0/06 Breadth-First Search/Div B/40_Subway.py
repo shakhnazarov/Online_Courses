@@ -51,6 +51,7 @@ for length in range(len(paths)):
 print(ans)
 
 '''
+Performance: P 3.11.2 (-); P 3.9 PyPy 7.3.11 (179 ms, 28.10 Mb)
 Time Complexity: O(M^2*N)
 Auxiliary Space: O(M^2)
 Test cases:

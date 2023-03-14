@@ -57,6 +57,7 @@ print(ans_len)
 if ans_len not in {0, -1}:
     print(*path[::-1])
 '''
+Performance: P 3.11.2 (55 ms, 4.41 Mb); P 3.9 PyPy 7.3.11 (225 ms, 28.10 Mb)
 Complexity: O(V^2+E)  # O(V+E) BFS and O(V^2) for input
 Auxiliary Space Complexity: O(V+E)
 Test Cases:
